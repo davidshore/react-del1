@@ -1,0 +1,11 @@
+.red {
+  border: 2px solid #bd0101;
+  background-color: red;
+  padding: 6px;
+}
+
+.green {
+  border: 2px solid #045d04;
+  background-color: green;
+  padding: 6px;
+}
