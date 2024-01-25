@@ -10,11 +10,14 @@ import Item from "./Item";
 
 export default function List(props) {
   const list = props.list;
+  const onRemoveItem = props.onRemoveItem;
 
   return (
     <ul>
-      {list.map(({ objectID, ...item }) => {
-        return <Item key={objectID} {...item} />;
+      {list.map((item) => {
+        return (
+          <Item onRemoveItem={onRemoveItem} key={item.objectID} {...item} />
+        );
       })}
     </ul>
   );

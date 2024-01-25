@@ -45,6 +45,11 @@ function App() {
 
   const [stories, setStories] = useState([]);
 
+  function handleRemoveStory(objectID) {
+    const newStories = stories.filter((story) => objectID !== story.objectID);
+    setStories(newStories);
+  }
+
   useEffect(() => {
     getAsyncStories().then((result) => {
       setStories(result.data.stories);
@@ -77,7 +82,7 @@ function App() {
       </InputWithLabel>
 
       <hr />
-      <List list={filteredList} />
+      <List onRemoveItem={handleRemoveStory} list={filteredList} />
     </div>
   );
 }
