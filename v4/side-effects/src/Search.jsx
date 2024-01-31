@@ -28,6 +28,9 @@ export default function Search({ onSearch, searchTerm }) {
   // const { onSearch, searchTerm } = props;
 
   return (
+    
+
+
     <>
       <label htmlFor="search">Search: </label>
       <input
