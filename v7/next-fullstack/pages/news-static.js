@@ -13,7 +13,7 @@ export async function getStaticProps() {
       news: data.articles,
     },
 
-    revalidate: 10,
+    // revalidate: 10,
   };
 }
 
