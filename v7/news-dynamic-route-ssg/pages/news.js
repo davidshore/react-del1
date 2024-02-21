@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const DIN_API_NYCKEL = "";
+const DIN_API_NYCKEL = "pub_38158964e5638dbf5b237b29d3be5bf1a5b9d";
 
 //newsdata.io/api/1/news?apikey=pub_38158964e5638dbf5b237b29d3be5bf1a5b9d&q=pizza
 

@@ -1,6 +1,6 @@
 // SSR - Server Side Rendering
 
-const DIN_API_NYCKEL = "";
+const DIN_API_NYCKEL = "pub_38158964e5638dbf5b237b29d3be5bf1a5b9d";
 
 export async function getServerSideProps() {
   const res = await fetch(
