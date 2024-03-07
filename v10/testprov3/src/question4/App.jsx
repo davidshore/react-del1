@@ -3,8 +3,27 @@
 // När man klickar på knappen ska det man skrev sparas i Redux och
 // visas i en div i App.jsx.
 
+import { Provider } from "react-redux";
+import InputCreate from "./InputCreate";
+import InputRead from "./InputRead";
+
+// installera redux:
+// npm i react-redux @reduxjs/toolkit
+
+// inputSlice.js
+
+// store.js
+
+// Provider runt alla komponenter som ska kunna läsa och
+// skriva från redux.
+
 function App() {
-  return <div></div>;
+  return (
+    <Provider>
+      <InputCreate />
+      <InputRead />
+    </Provider>
+  );
 }
 
 export default App;

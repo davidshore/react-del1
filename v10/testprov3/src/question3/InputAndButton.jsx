@@ -5,6 +5,7 @@ export default function InputAndButton({ setDisplay }) {
 
   return (
     <div>
+      <h2>child component</h2>
       <input
         type="text"
         value={input}

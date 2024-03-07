@@ -11,6 +11,8 @@ function App() {
   return (
     <div>
       <InputAndButton setDisplay={setDisplay} />
+
+      <h2>Parent component</h2>
       <div>{display}</div>
     </div>
   );
