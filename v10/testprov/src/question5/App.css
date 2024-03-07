@@ -1,0 +1,50 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  margin: 20px;
+}
+
+.rightPart {
+  display: flex;
+}
+
+.hamburger {
+  display: block;
+  margin: 20px;
+}
+
+.links {
+  display: none;
+}
+
+.mobileLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileLinks a {
+  margin: 20px;
+  display: inline;
+}
+
+.links a {
+  margin: 20px;
+}
+
+@media (min-width: 768px) {
+  .links {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .mobileLinks {
+    display: none;
+  }
+}

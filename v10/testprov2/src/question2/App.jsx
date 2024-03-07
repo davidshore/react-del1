@@ -13,29 +13,47 @@ function App() {
   const [email, setEmail] = useState("david@chas.se");
   const [edit, setEdit] = useState(false);
 
-  function renderEmail() {
-    if (edit) {
-      return (
+  // function renderEmail() {
+  //   if (edit) {
+  //     return (
+  //       <>
+  //         <input
+  //           type="text"
+  //           onChange={(e) => setEmail(e.target.value)}
+  //           value={email}
+  //         />
+  //         <button onClick={() => setEdit(!edit)}>Save</button>
+  //       </>
+  //     );
+  //   } else {
+  //     return (
+  //       <>
+  //         <p>{email}</p>
+  //         <button onClick={() => setEdit(!edit)}>Edit</button>
+  //       </>
+  //     );
+  //   }
+  // }
+
+  return (
+    <div>
+      {edit ? (
         <>
           <input
             type="text"
-            onChange={(e) => setEmail(e.target.value)}
             value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
-          <button onClick={() => setEdit(!edit)}>Save</button>
+          <button onClick={() => setEdit(false)}>Save</button>
         </>
-      );
-    } else {
-      return (
+      ) : (
         <>
           <p>{email}</p>
-          <button onClick={() => setEdit(!edit)}>Edit</button>
+          <button onClick={() => setEdit(true)}>Edit</button>
         </>
-      );
-    }
-  }
-
-  return <div>{renderEmail()}</div>;
+      )}
+    </div>
+  );
 }
 
 export default App;
