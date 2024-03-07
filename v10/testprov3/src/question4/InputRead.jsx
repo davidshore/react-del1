@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
 
 function InputRead() {
-  const value = useSelector((state) => state.input.value);
-  // const { value } =  useSelector((state) => state.input)
+  // const value = useSelector((state) => state.input.value);
+  const { value } = useSelector((state) => state.input);
 
   return (
     <div>

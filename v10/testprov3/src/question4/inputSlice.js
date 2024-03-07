@@ -6,12 +6,12 @@ export const inputSlice = createSlice({
     value: "",
   },
   reducers: {
-    setInput: (state, payload) => {
-      state.value = payload;
+    setInput: (state, action) => {
+      state.value = action.payload;
     },
   },
 });
 
-export const { setInput } = counterSlice.actions;
+export const { setInput } = inputSlice.actions;
 
-export default counterSlice.reducer;
+export default inputSlice.reducer;

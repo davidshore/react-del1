@@ -6,6 +6,7 @@
 import { Provider } from "react-redux";
 import InputCreate from "./InputCreate";
 import InputRead from "./InputRead";
+import { store } from "./store";
 
 // installera redux:
 // npm i react-redux @reduxjs/toolkit
@@ -17,9 +18,11 @@ import InputRead from "./InputRead";
 // Provider runt alla komponenter som ska kunna läsa och
 // skriva från redux.
 
+// Koppla komponenterna till redux
+
 function App() {
   return (
-    <Provider>
+    <Provider store={store}>
       <InputCreate />
       <InputRead />
     </Provider>
